@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+    <title>Troca de Óleo</title>
+</head>
+
+<body>
+    <div id="formulario">
+        <img src="img/oil.png" alt="imagem-oleo">
+
+        <h1>Troca de Óleo</h1>
+        <input type="text" id="kmRodados" placeholder="KM Rodados">
+        <input type="text" id="txt-oleo" placeholder="Tipo de Óleo">
+
+        <select name="veiculo" id="veiculo">
+            <option value="carro">Carro</option>
+            <option value="moto">moto</option>
+        </select>
+
+        <input type="date" id="dataTroca">
+        <button class="botao" onclick="salvarTroca()">Salvar</button>
+        <button class="botao-mostrar" onclick="mostrarTabela()">Mostrar Tabela</button>
+    </div>
+
+    <div id="tabelaContainer">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Veiculo</th>
+                    <th>Tipo de Óleo</th>
+                    <th>KM Rodados</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela"></tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3">Total Kms</th>
+                    <th id="total"></th>
+                </tr>
+            </tfoot>
+        </table>
+
+        <button onclick="voltarParaFormulario()">Voltar</button>
+    </div>
+
+
+</body>
+<script src="tabela.js"></script>
+
+</html>
