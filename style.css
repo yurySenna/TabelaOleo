@@ -121,11 +121,13 @@
      
 
      th {
-         height: 40px;
-         width: 100px;
          margin: 5px;
          background-color: rgb(138, 136, 136);
          border: 1px solid black;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         white-space: nowrap;
+         padding: 10px;
 
      }
  }
@@ -137,5 +139,8 @@
      text-align: center;
      font-size: 17px;
      text-transform: capitalize;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
      
  }

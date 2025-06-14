@@ -14,7 +14,7 @@ function salvarTroca() {
 
     
     trocas.push({ km, data, oleo, veiculo });
-    console.log(veiculo)
+    
     
 
     localStorage.setItem('trocasOleo', JSON.stringify(trocas));
@@ -30,7 +30,7 @@ function salvarTroca() {
     trocas.forEach((troca) => {
       corpo.innerHTML += `
         <tr>
-          <td>${troca.data}</td>
+          <td>${new Date(troca.data).toLocaleDateString('pt-BR')}</td>
           <td>${troca.veiculo}</td>
           <td>${troca.oleo}</td>
           <td>${troca.km}</td>
