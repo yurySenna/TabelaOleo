@@ -95,7 +95,7 @@
 
  #tabelaContainer {
      display: none;
-     width: 300px;
+     width: 400px;
      height: auto;
 
      button {
@@ -119,25 +119,26 @@
      background-color: #fff;
      
      
+     
 
      th {
-         margin: 5px;
          background-color: rgb(138, 136, 136);
          border: 1px solid black;
          overflow: hidden;
          text-overflow: ellipsis;
          white-space: nowrap;
-         padding: 10px;
+         padding: 8px;
+     
 
      }
  }
 
  td {
      border: 1px solid black;
-     padding: 8px;
+     padding: 5px;
      height: 30px;
      text-align: center;
-     font-size: 17px;
+     font-size: 15px;
      text-transform: capitalize;
      overflow: hidden;
      text-overflow: ellipsis;

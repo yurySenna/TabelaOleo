@@ -4,8 +4,8 @@ function salvarTroca() {
     const oleo = document.getElementById('txt-oleo').value;
     const veiculo = document.getElementById('veiculo').value;
 
-    if (!km || !data) {
-      alert('Preencha todos os campos!');
+    if (isNaN(km) || !km || !data) {
+      alert('Preencha todos os campos validos!');
       return;
     }
 
