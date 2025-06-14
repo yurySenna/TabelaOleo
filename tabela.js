@@ -52,9 +52,9 @@ function salvarTroca() {
   document.getElementById('txt-oleo').value = '';
   document.getElementById('dataTroca').value = '';
 }
-window.onload = () => {
-    localStorage.clear(); // Apaga tudo ao abrir a página
-};
+// window.onload = () => {
+//     localStorage.clear(); // Apaga tudo ao abrir a página
+// };
 
 
 
