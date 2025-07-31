@@ -30,7 +30,7 @@ function salvarTroca() {
     trocas.forEach((troca) => {
       corpo.innerHTML += `
         <tr>
-          <td>${new Date(troca.data).toLocaleDateString('pt-BR')}</td>
+          <td>${troca.data.split('-').reverse().join('/')}</td>
           <td>${troca.veiculo}</td>
           <td>${troca.oleo}</td>
           <td>${troca.km}</td>
